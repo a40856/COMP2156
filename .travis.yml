@@ -12,3 +12,7 @@ deploy:
   local_dir: build
   on:
     branch: main
+before_deploy:
+  - gem update --system
+  - gem install bundler
+  - bundle install

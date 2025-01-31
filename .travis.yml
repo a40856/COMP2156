@@ -4,11 +4,17 @@ node_js:
 dist: focal
 
 before_install:
-  - cd $TRAVIS_BUILD_DIR
+  - ls -la
+  - pwd
+  - cat package.json
+
 
 install:
-  - npm install
+  - npm ci
+
 script:
+  - ls -la
+  - cat package.json
   - npm test
 
 deploy:

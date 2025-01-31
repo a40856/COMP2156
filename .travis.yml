@@ -5,6 +5,11 @@ dist: focal
 cache:
   directories:
     - node_modules
+
+before_install:
+  - gem install bundler
+
+
 deploy:
   provider: pages
   skip_cleanup: true

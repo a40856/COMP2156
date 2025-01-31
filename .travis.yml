@@ -11,6 +11,8 @@ before_install:
   - gem uninstall uri -v 0.13.1 -x || true
   - gem install uri -v 1.0.2
   - gem install bundler
+  - gem install faraday -v 2.0.0
+  - gem install dpl
 
 install:
   - npm install

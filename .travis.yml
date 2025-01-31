@@ -6,10 +6,6 @@ cache:
   directories:
     - node_modules
 
-before_install:
-  - gem install bundler
-
-
 deploy:
   provider: pages
   skip_cleanup: true
@@ -18,4 +14,5 @@ deploy:
   on:
     branch: main
 before_deploy:
+  - npm install
   - npm run build

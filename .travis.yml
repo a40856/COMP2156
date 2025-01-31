@@ -10,6 +10,11 @@ script:
   - npm install
   - npm test
 
+before_deploy:
+  - gem update --system
+  - gem install bundler
+  - gem install uri -v 1.0.2
+
 deploy:
   provider: pages
   skip_cleanup: true

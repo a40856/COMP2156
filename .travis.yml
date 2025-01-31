@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-  - "stable"
+  - "18"
 dist: focal
+cache:
+  directories:
+    - node_modules
 deploy:
   provider: pages
   skip_cleanup: true

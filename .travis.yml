@@ -2,7 +2,7 @@ language: node_js
 
 node_js:
   - "stable"
- dist: focal
+dist: focal
 
 deploy:
   provider: pages

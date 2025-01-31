@@ -1,13 +1,15 @@
 language: node_js
 node_js:
   - "stable"
- dist: focal
+dist: focal
+
+before_install:
+  - cd $TRAVIS_BUILD_DIR
 
 install:
   - npm install
 script:
   - npm test
-
 
 deploy:
   provider: pages

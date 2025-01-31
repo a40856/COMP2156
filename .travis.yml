@@ -1,8 +1,9 @@
 language: node_js
+
 node_js:
   - "stable"
  dist: focal
- 
+
 deploy:
   provider: pages
   skip_cleanup: true

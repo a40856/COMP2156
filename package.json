@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://<your-username>.github.io/<repository-name>",
+  "homepage": "https://a40856.github.io/COMP2156",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/a40856/comp2156.git"
